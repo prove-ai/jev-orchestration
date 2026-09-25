@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "live", "runtimeExecutable": "npx", "runtimeArgs": ["tsx", "src/cli.ts", "--live", "--port", "4343"], "port": 4343 }
+  ]
+}

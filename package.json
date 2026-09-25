@@ -1,0 +1,22 @@
+{
+  "name": "jev-orchestration",
+  "version": "0.1.0",
+  "description": "Decision-tree orchestration for agents: Jev (Choice / Score / Noul) picks the branch, code and tools do the work, every step is visible live",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --import tsx --test test/*.ts",
+    "demo": "tsx src/cli.ts",
+    "live": "tsx src/cli.ts --live",
+    "bench": "tsx bench/run.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.128.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  }
+}
